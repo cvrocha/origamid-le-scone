@@ -1,0 +1,9 @@
+body {
+  background: $bg-color;
+  border: 10px solid $bg-button;
+  color: $dt-color;
+  @media screen and (max-width: 1058px){
+    border: none;
+  }
+}
+

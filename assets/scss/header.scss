@@ -1,0 +1,106 @@
+@import 'variables';
+
+.container-header{ 
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 50px 0 20px 0;
+  .header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 1058px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+    .container-details{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 1058px) {
+      gap: 100px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 30px;
+      color: $dt-color;
+      font-weight: 400;
+      font-family: "PT Mono";
+    }
+    .container-enderecos{
+    border-right: 2px solid $dt-color;
+      .numero{
+        p{
+          color: $bd-primary-color;
+          font-family: "PT Mono",monospace;
+          font-size: 1.125em;
+          line-height: 1.66667em;
+        }
+      }
+        .data{
+          width: 176px;
+          margin-bottom: 20px;
+          border-bottom: 2px solid $dt-color;
+          p{
+            font-family: "PT Mono",monospace;
+            font-size: 1.125em;
+            line-height: 1.66667em;
+            .aberto {
+              display: inline-block;
+              width: 12px;
+              height: 12px;
+              background: #1ab912;
+              border-radius: 50%;
+              margin-left: 18px;
+          }
+          }
+        }
+        .endereco{
+          width: 178px;
+          p{
+            font-family: "PT Mono",monospace;
+            font-size: 1.125em;
+            line-height: 1.66667em;
+          }
+        }
+    }
+    .barras{
+      p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 250px;
+        font-weight: 900;
+      }
+    }
+    .logo {
+        img{
+          object-fit: cover;
+        }
+      }
+    }
+    .container-img{
+    width: 500px;
+    @media screen and (max-width: 1058px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 167px;
+    }
+      img{
+      border: 10px solid $bd-bg-color;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      @media screen and (max-width: 1058px) {
+        width: 60%;
+        height: 100%;
+      }
+      }
+    }
+  }
+}
+
+
+
+

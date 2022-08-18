@@ -1,0 +1,153 @@
+@import 'variables';
+
+.container-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 160px 0 20px 0;
+  .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 1058px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .titulo-menu{
+    display: flex;
+    justify-content: end;
+      p{
+        line-height: 30px;
+        color: $dt-color;
+        font-weight: 900;
+        margin-right: 20px;
+        text-transform: uppercase;
+        font-family: "PT Mono",monospace;
+        font-size: 1.125em;
+      }
+      div{
+      height: 2px;
+      width: 30%;
+      background: $dt-color;
+      margin-right: 20px;
+      position: relative;
+      top: 15px;
+      }
+    }
+    h1{
+      color: $dt-color;
+      font-weight: 700;
+      margin-left: 20px;
+      font-family: "Aref Ruqaa",serif;
+      font-size: 1.5em;
+      @media screen and (max-width: 575px) {
+        margin-bottom: 20px;
+      }
+    }
+    .container-entradas{
+      display: flex;
+      justify-content: space-between;
+      gap: 115px;
+      @media screen and (max-width: 575px) {
+          flex-direction: column;
+          gap: 12px;
+      }
+        .entradas{
+          display: flex;
+          flex-direction: column;
+          gap: 7px;
+          justify-content: center;
+          align-items: flex-start;
+          .entrada1,
+          .entrada2,
+          .entrada3,
+          .entrada4,
+          .entrada5{
+            display: flex;
+            justify-content: start;
+            gap: 20px;
+            p:first-child{
+              font-size: 18px;
+              color: $pc-color;
+              font-weight: 500;
+              font-family: "Aref Ruqaa",serif;
+              text-align: right;
+            }
+            p:last-child{
+              font-size: 18px;  
+              color: $dt-color;
+              font-weight: 500;
+              font-family: "PT Mono",monospace;
+              }
+          }
+        }
+        .img-entrada{
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 40px;
+          @media screen and (max-width: 575px) {
+            justify-content: center;
+            align-items: center;
+          }
+            img{
+              width: 150px;
+              height: 150px;
+              border-radius: 150px;      
+              border: 10px solid $bd-bg-color;
+            }
+          }
+      }
+    .container-pratos{
+      display: flex;
+      justify-content: start;
+      gap: 115px;
+      @media screen and (max-width: 575px) {
+        flex-direction: column;
+        gap: 12px;
+    }
+      .pratos{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        justify-content: center;
+        align-items: flex-start;
+          .prato1,
+          .prato2,
+          .prato3,
+          .prato4,
+          .prato5{
+            display: flex;
+            justify-content: start;
+            gap: 20px;
+            p:first-child{
+              font-size: 18px;
+              color: $pc-color;
+              font-weight: 500;
+              font-family: "Aref Ruqaa",serif;
+              text-align: right;
+            }
+            p:last-child{
+              font-size: 18px;  
+              color: $dt-color;
+              font-weight: 500;
+              font-family: "PT Mono",monospace;
+              }
+          }
+        
+        }
+        .img-pratos{
+          display: flex;
+          flex-direction: column;
+          @media screen and (max-width: 575px) {
+            justify-content: center;
+            align-items: center;
+          }
+            img{
+              width: 150px;
+              height: 150px;
+              border-radius: 150px;      
+              border: 10px solid $bd-bg-color;
+            }
+          }
+      }
+      }
+}

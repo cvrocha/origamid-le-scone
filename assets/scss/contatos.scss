@@ -1,0 +1,152 @@
+@import 'variables';
+
+.container-contatos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0 20px 0;
+  .contatos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 1058px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .titulo-contato{
+    display: flex;
+    justify-content: end;
+      p{
+        line-height: 30px;
+        color: $dt-color;
+        font-weight: 900;
+        margin-right: 20px;
+        text-transform: uppercase;
+        font-family: "PT Mono",monospace;
+        font-size: 1.125em;
+      }
+      div{
+      height: 2px;
+      width: 30%;
+      background: $dt-color;
+      margin-right: 20px;
+      position: relative;
+      top: 15px;
+      }
+    }
+    .container-formulario{
+      @media screen and (max-width: 499px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    input{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: 2px solid $bd-primary-color;
+    }
+      .inputs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        @media screen and (max-width: 575px) {
+          display: block;
+        }
+        .email-input{
+          width: 312px;
+          @media screen and (max-width: 575px) {
+            width: 100%;
+          }
+        }
+        
+      }
+      .inputs-botao{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        @media screen and (max-width: 499px) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .botao-input{
+          input {
+            width: 200px;
+            height: 40px;
+            font-family: "PT Mono",monospace;
+            font-size: 1.125em;
+            cursor: pointer;
+            color: #988c77;
+            text-transform: uppercase;
+            border: 2px solid #988c77;
+            background: transparent;
+            display: block;
+            padding-top: 5px;
+            -webkit-box-shadow: 5px 5px 0 -2px #cbc6b9, 5px 5px 0 0 #988c77;
+            -moz-box-shadow: 5px 5px 0 -2px #cbc6b9,5px 5px 0 0 #988c77;
+            box-shadow: 5px 5px 0 -2px #cbc6b9, 5px 5px 0 0 #988c77;
+            transition: .3s;
+            &:hover {
+              -webkit-box-shadow: 3px 3px 0 -2px #cbc6b9, 3px 3px 0 0 #988c77;
+              -moz-box-shadow: 3px 3px 0 -2px #cbc6b9,3px 3px 0 0 #988c77;
+              box-shadow: 3px 3px 0 -2px #cbc6b9, 3px 3px 0 0 #988c77;
+          }
+        }
+        }
+        p{
+          color: #988c78;
+          font-weight: 400;
+          font-family: "PT Mono",monospace;
+          font-size: 1.125em;
+          line-height: 1.66667em;
+        }
+      }
+    .name-form{
+      color: $dt-color;
+      font-weight: 600;
+      font-family: "PT Mono",monospace;
+      font-size: 1.125em;
+      line-height: 1.66667em;
+    }
+    #Mensagem{
+      height: 100px;
+    }
+    div{
+      &:not(.nome-input){
+        margin-top: 10px;
+      }
+    }
+    }
+    h1{
+      font-size: 24px;
+      line-height: 25px;
+      color: $dt-color;
+      font-weight: 700;
+      font-family: "Aref Ruqaa";
+      margin-left: 20px;
+    }
+  }
+}
+.map{
+  @media screen and (max-width: 575px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  iframe{
+    display: block;
+    -webkit-box-shadow: 0 0 0 10px #cbc6b9;
+    -moz-box-shadow: 0 0 0 10px #cbc6b9;
+    box-shadow: 0 0 0 10px #cbc6b9;
+    clear: both;
+    height: 200px;
+    width: 100%;
+    margin: 80px 0;
+    @media screen and (max-width: 575px) {
+      width: 80%;
+    }
+  }
+}

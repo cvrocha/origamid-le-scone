@@ -1,0 +1,41 @@
+@import 'variables';
+
+.container-footer{
+width: 100%;
+background-color: $dt-color;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+height: 100px;
+position: absolute;
+@media screen and (max-width: 574px){
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+  .flex-copy{
+    p{
+      color: $text-footer;
+      font-weight: 400;
+      font-family: "PT Mono",monospace;
+      font-size: 1.125em;
+      @media screen and (max-width: 380px){
+        font-size: 15px;
+      }
+    }
+  }
+  .flex-logo{
+    img{
+      font-size: 56px;
+      line-height: 96px;
+      color: $text-footer;
+      font-weight: 700;
+      font-family: "Aref Ruqaa";
+    }
+  }
+}
+
+
+footer {
+	padding: 20px 0;
+}
